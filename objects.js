@@ -1,12 +1,9 @@
 let car = {
-
     make: 'BMV',
     model: '745li',
     year: '2010',
-
     getPrice: function () {
         return 50000;
-
     },
     printInfo: function () {
         console.log(this.make + ' ' + this.model)
@@ -19,7 +16,6 @@ console.log(car.year);
 console.log(car['year']); // possible bad practice
 
 ///////////////////////////////////////////////////////////
-
 var myCar = {};
 myCar.Make = 'Honda';
 myCar.Model = 'CRV';
@@ -31,7 +27,6 @@ myCar.GetInfo = function () {
 myCar.GetInfo();
 
 //////////////////////////////////////////////////////////
-
 var a = {
     propertyObject: {
         myObject: 'myvalue'
@@ -41,7 +36,6 @@ var a = {
 console.log('My object value: ' + a.propertyObject.myObject);
 
 //////////////////////////////////////////////////////////
-
 var b = {
     name: 'Array',
     myArray: [{
@@ -58,4 +52,4 @@ var b = {
 
 console.log(b);
 console.log(b.myArray[2]); // returns 3rd element
-console.log(b.myArray[2]["3"]); // returns value of the 3rd element
+console.log(b.myArray[2][3]); // returns value of the 3rd element
