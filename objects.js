@@ -27,16 +27,16 @@ myCar.GetInfo = function () {
 myCar.GetInfo();
 
 //////////////////////////////////////////////////////////
-var a = {
-    propertyObject: {
-        myObject: 'myvalue'
+var outerObject = {
+    innerObject: {
+        property: 'myvalue'
     }
 };
 
-console.log('My object value: ' + a.propertyObject.myObject);
+console.log('Inner object property value: ' + outerObject.innerObject.myObject);
 
 //////////////////////////////////////////////////////////
-var b = {
+var arrayObject = {
     name: 'Array',
     myArray: [{
             1: 'one'
@@ -50,6 +50,6 @@ var b = {
     ]
 };
 
-console.log(b);
-console.log(b.myArray[2]); // returns 3rd element
-console.log(b.myArray[2][3]); // returns value of the 3rd element
+console.log(arrayObject);
+console.log(arrayObject.myArray[2]); // returns 3rd element
+console.log(arrayObject.myArray[2][3]); // returns value of the 3rd element
