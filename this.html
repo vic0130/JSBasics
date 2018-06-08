@@ -1,0 +1,23 @@
+<html>
+
+<head>
+    <title>This keyword</title>
+</head>
+
+<body>
+
+    <button onclick="clickHandler(this)">Click me</button>
+    <script>
+        function clickHandler(arg) {
+
+            // 'this' from the click handler refers to a specific DOM element
+            console.log(arg);
+            console.log(arg.innerText);
+
+            // 'this' refers to a Window object
+            console.log(this);
+        }
+    </script>
+</body>
+
+</html>
